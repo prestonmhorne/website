@@ -45,7 +45,7 @@ function Footer() {
           >
             <Image
               className="footer-image" 
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
               alt="LinkedIn"
               width={24}
               height={24}
@@ -53,9 +53,6 @@ function Footer() {
             <span className="ml-2">LinkedIn</span>
           </a>
         </div>
-        <p className="footer-text">
-          &copy; 2025 Preston Horne. All rights reserved.
-        </p>
       </div>
     </footer>
   );
