@@ -162,17 +162,27 @@ export default function About() {
         {/* Contact Information */}
         <section className="card">
           <h2 className="text-2xl font-semibold mb-4">Get In Touch</h2>
-          <div className="space-y-4">
-            <div className="contact-item">
-              <div className="contact-icon bg-blue-500"></div>
+          <div className="space-y-3">
+            <div className="tech-link">
+              <Image
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/signal.svg"
+                alt="Signal"
+                width={20}
+                height={20}
+              />
               <div>
                 <p className="font-medium">Signal</p>
                 <p className="text-sm opacity-75">prestonhorne [ dot 01 ]</p>
               </div>
             </div>
             
-            <div className="contact-item">
-              <div className="contact-icon bg-red-500"></div>
+            <div className="tech-link">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/maildotru.svg"
+                alt="Email"
+                width={20}
+                height={20}
+              />
               <div>
                 <p className="font-medium">Email</p>
                 <p className="text-sm opacity-75">me [ at prestonhorne dot com ]</p>
@@ -180,12 +190,17 @@ export default function About() {
               </div>
             </div>
             
-            <div className="contact-item">
-              <div className="contact-icon bg-orange-500"></div>
+            <div className="tech-link">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/gnuprivacyguard.svg"
+                alt="GPG"
+                width={20}
+                height={20}
+              />
               <div>
                 <p className="font-medium">GPG</p>
-                <p className="text-sm opacity-75">Public Key</p>
-                <p className="text-sm opacity-75">Fingerprint</p>
+                <p className="text-sm opacity-75">[Public Key]</p>
+                <p className="text-sm opacity-75">[Fingerprint]</p>
               </div>
             </div>
           </div>
@@ -196,16 +211,32 @@ export default function About() {
       <section className="card">
         <h2 className="text-2xl font-semibold mb-4">Cryptocurrency</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h3 className="font-medium mb-2">Bitcoin</h3>
-            <div className="crypto-address">
-              [Bitcoin Address]
+          <div className="tech-link">
+            <Image
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/bitcoin.svg"
+              alt="Bitcoin"
+              width={20}
+              height={20}
+            />
+            <div>
+              <h3 className="font-medium mb-2">Bitcoin</h3>
+              <div className="crypto-address">
+                [Bitcoin Address]
+              </div>
             </div>
           </div>
-          <div>
-            <h3 className="font-medium mb-2">Monero</h3>
-            <div className="crypto-address">
-              [Monero Address]
+          <div className="tech-link">
+            <Image
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/monero.svg"
+              alt="Monero"
+              width={20}
+              height={20}
+            />
+            <div>
+              <h3 className="font-medium mb-2">Monero</h3>
+              <div className="crypto-address">
+                [Monero Address]
+              </div>
             </div>
           </div>
         </div>
