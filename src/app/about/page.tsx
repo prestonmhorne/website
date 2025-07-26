@@ -148,6 +148,22 @@ export default function About() {
                   />
                   <span>Docker</span>
                 </a>
+
+                <a 
+                  href="https://kubernetes.io" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Kubernetes"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
+                    alt="Kubernetes"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Kubernetes</span>
+                </a>
                 
                 <a 
                   href="https://unity.com" 
@@ -164,14 +180,62 @@ export default function About() {
                   />
                   <span>Unity</span>
                 </a>
+
+                <a 
+                  href="https://ollama.com" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ollama"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/ollama.svg"
+                    alt="Ollama"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Ollama</span>
+                </a>
+
+                <a 
+                  href="https://www.raspberrypi.com" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Raspberry Pi"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-plain.svg"
+                    alt="Raspberry Pi"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Raspberry Pi</span>
+                </a>
+
+                <a 
+                  href="https://neovim.io" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Neovim"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
+                    alt="Neovim"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Neovim</span>
+                </a>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-3">Other Interests</h3>
+              <h3 className="text-lg font-medium mb-3">Activities</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="interest-tag">Self Hosting</span>
-                <span className="interest-tag">Privacy</span>
-                <span className="interest-tag">3D Printing</span>
+                <span className="interest-tag">Self-Hosting</span>
+                <span className="interest-tag">Operational Security</span>
+                <span className="interest-tag">Data Privacy</span>
               </div>
             </div>
           </div>
