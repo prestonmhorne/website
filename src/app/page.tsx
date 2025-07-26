@@ -11,9 +11,6 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">
               Preston Horne
             </p>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Portfolio and Personal Website
-            </p>
           </div>
         </div>
       </section>
