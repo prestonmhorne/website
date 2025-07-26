@@ -57,12 +57,12 @@ export default function Home() {
   return (
     <div className="max-w-4xl mx-auto">
       {/* Hero Section */}
-      <section className="text-center space-y-16 py-16">
+      <section className="text-center space-y-32 py-16">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Welcome!
           </h1>
-          <div className="space-y-2 pt-8">
+          <div className="space-y-2 pt-24">
             <div className="text-2xl md:text-4xl lg:text-5xl font-mono bg-black text-green-400 p-6 md:p-8 rounded-lg inline-block min-h-[4rem] md:min-h-[6rem] flex items-center">
               <span className="mr-3 text-green-300">$</span>
               <span className="mr-2">echo &quot;</span>

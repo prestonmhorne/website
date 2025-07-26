@@ -157,7 +157,7 @@ export default function About() {
 
             {/* Topics */}
             <div>
-              <h3 className="text-lg font-medium mb-4">Areas of Interest</h3>
+              <h3 className="text-lg font-medium mb-4">Topics</h3>
               <div className="flex flex-wrap gap-2">
                 {interests.map((interest) => (
                   <span key={interest} className="interest-tag">
