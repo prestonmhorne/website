@@ -26,7 +26,11 @@ export default function RootLayout({
             Home
           </Link>
         </nav>
-        {children}
+
+        <main className="flex items-center justify-center p-8">
+          {children}
+        </main>
+        
         <footer className="p-4 border-t border-foreground text-center">
           <p>&copy; 2025 Preston Horne. All rights reserved.</p>
         </footer>
