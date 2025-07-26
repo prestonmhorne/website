@@ -63,13 +63,12 @@ export default function Home() {
             Welcome!
           </h1>
           <div className="space-y-2 pt-24">
-            <div className="text-2xl md:text-4xl lg:text-5xl font-mono bg-black text-green-400 p-6 md:p-8 rounded-lg inline-block min-h-[4rem] md:min-h-[6rem] flex items-center">
-              <span className="mr-3 text-green-300">$</span>
-              <span className="mr-2">echo &quot;</span>
-              <span>{displayText}</span>
-              <span className="mr-2">&quot;</span>
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono bg-black text-green-400 p-4 sm:p-6 md:p-8 rounded-lg inline-block min-h-[3rem] sm:min-h-[4rem] md:min-h-[5rem] lg:min-h-[6rem] flex items-center whitespace-nowrap overflow-x-auto max-w-full">
+              <span className="text-green-300 flex-shrink-0">$</span>
+              <span className="flex-shrink-0 ml-2">echo</span>
+              <span className="flex-shrink-0 ml-2">&quot;{displayText}&quot;</span>
               <span 
-                className={`inline-block w-3 md:w-4 h-8 md:h-12 lg:h-16 bg-green-400 ml-2 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
+                className={`inline-block w-2 sm:w-3 md:w-4 h-6 sm:h-8 md:h-10 lg:h-12 xl:h-16 bg-green-400 ml-1 flex-shrink-0 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
               />
             </div>
           </div>
