@@ -14,14 +14,17 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-lg leading-relaxed mb-4">
             Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
-            I&apos;m passionate about software development, artificial intelligence, and emerging technologies.
+            I&apos;m passionate about software development, artificial intelligence, and emerging technologies. 
           </p>
-          <Link 
-            href="/about/resume" 
-            className="button-link"
-          >
-            View My Resume →
-          </Link>
+          <p className="text-lg leading-relaxed mb-4">
+            When I&apos;m not immersed in computer science,
+            you will likely find me at the gym lifting weights, relaxing in bed watching old animated cartoons, or getting lost in a good book. I also listen to plenty
+            of music. Some of my favorite bands include Radiohead and Nirvana. 
+          </p>
+
+          <p className="text-lg leading-relaxed mb-4">
+            One of my favorite 
+          </p>
         </section>
 
         {/* Interests */}
@@ -231,7 +234,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-3">Activities</h3>
+              <h3 className="text-lg font-medium mb-3">Topics</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="interest-tag">Self-Hosting</span>
                 <span className="interest-tag">Operational Security</span>
