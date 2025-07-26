@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from 'next/link'
 import { Geist_Mono } from "next/font/google";
+import Navigation from './components/Navigation';
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -10,8 +10,51 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Preston Horne",
-  description: "Portfolio Website",
+  description: "Computer Science Graduate Student at Vanderbilt University",
 };
+
+// Footer Component
+function Footer() {
+  return (
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="footer-social">
+          <a 
+            href="https://github.com/preston-horne" 
+            className="footer-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <img 
+              className="footer-image" 
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+            <span className="ml-2">GitHub</span>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/preston-horne-612964368/" 
+            className="footer-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <img 
+              className="footer-image" 
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn"
+            />
+            <span className="ml-2">LinkedIn</span>
+          </a>
+        </div>
+        <p className="footer-text">
+          &copy; 2025 Preston Horne. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
 
 export default function RootLayout({
   children,
@@ -20,20 +63,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} antialiased min-h-screen grid grid-rows-[auto_1fr_auto]`}>
-        <nav className="p-4 border-b border-foreground">
-          <Link href="/" className="text-xl font-semibold">
-            Home
-          </Link>
-        </nav>
-
-        <main className="flex items-center justify-center p-8">
-          {children}
-        </main>
-        
-        <footer className="p-4 border-t border-foreground text-center">
-          <p>&copy; 2025 Preston Horne. All rights reserved.</p>
-        </footer>
+      <body className={`${geistMono.variable} antialiased`}>
+        <div className="layout-grid">
+          <Navigation />
+          
+          <main className="main-content">
+            <div className="content-wrapper">
+              {children}
+            </div>
+          </main>
+          
+          <Footer />
+        </div>
       </body>
     </html>
   );
