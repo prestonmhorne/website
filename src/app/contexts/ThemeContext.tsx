@@ -32,7 +32,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         // Check system preference
         initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
-    } catch (error) {
+    } catch {
       console.warn('Could not access localStorage for theme');
     }
 
@@ -49,7 +49,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.setAttribute('data-theme', theme);
       try {
         localStorage.setItem('theme', theme);
-      } catch (error) {
+      } catch {
         console.warn('Could not save theme preference');
       }
     }
