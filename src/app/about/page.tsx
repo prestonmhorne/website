@@ -242,23 +242,6 @@ export default function About() {
           </div>
         </section>
       </div>
-
-      {/* Setup and Contact */}
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* My Setup */}
-        <section className="card">
-          <h2 className="text-2xl font-semibold mb-4">My Setup</h2>
-          <p className="mb-4 opacity-90">
-            Check out my current PC build and hardware specifications.
-          </p>
-          <Link 
-            href="/about/pc-specs" 
-            className="button-link"
-          >
-            View PC Specifications →
-          </Link>
-        </section>
-      </div>
     </div>
   );
 }
