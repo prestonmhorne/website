@@ -22,9 +22,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistMono.variable} antialiased`}>
         <nav>
-          <Link href="/">Home</Link>
+          <Link href="/" className="text-xl font-semibold">
+            Home
+          </Link>
         </nav>
         {children}
+        <footer className="p-4 border-t border-foreground text-center">
+          <p>&copy; 2025 Preston Horne. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
