@@ -1,71 +1,142 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400">
-          Computer Science Graduate Student at Vanderbilt University
-        </p>
       </header>
       
       <div className="grid lg:grid-cols-2 gap-8">
         {/* Introduction */}
-        <section className="space-y-6">
-          <div className="card">
-            <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-            <p className="text-lg leading-relaxed mb-4">
-              Hello! I&apos;m Preston Horne, a graduate student pursuing an MS in Computer Science at Vanderbilt University. 
-              I&apos;m passionate about software development, systems programming, and emerging technologies.
-            </p>
-            <Link 
-              href="/about/resume" 
-              className="button-link"
-            >
-              View My Resume →
-            </Link>
-          </div>
+        <section className="card">
+          <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            Hello! I&apos;m Preston Horne, a graduate student pursuing an MS in Computer Science at Vanderbilt University. 
+            I&apos;m passionate about software development, artificial intelligence, and emerging technologies.
+          </p>
+          <Link 
+            href="/about/resume" 
+            className="button-link"
+          >
+            View My Resume →
+          </Link>
         </section>
 
-        {/* Learning Interests */}
-        <section className="space-y-6">
-          <div className="card">
-            <h2 className="text-2xl font-semibold mb-4">Learning Interests</h2>
-            
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-medium mb-2">Programming Languages</h3>
-                <ul className="grid grid-cols-2 gap-2 text-sm">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    Python
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    C/C++
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                    C#
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                    Rust
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
-                    Go
-                  </li>
-                </ul>
+        {/* Interests */}
+        <section className="card">
+          <h2 className="text-2xl font-semibold mb-4">Interests</h2>
+          
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-lg font-medium mb-3">Programming Languages</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a 
+                  href="https://www.python.org" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Python"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Python</span>
+                </a>
+                
+                <a 
+                  href="https://isocpp.org" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="C++"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" 
+                    alt="C/C++"
+                    width={20}
+                    height={20}
+                  />
+                  <span>C/C++</span>
+                </a>
+                
+                <a 
+                  href="https://dotnet.microsoft.com/en-us/languages/csharp" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="C#"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+                    alt="C#"
+                    width={20}
+                    height={20}
+                  />
+                  <span>C#</span>
+                </a>
+                
+                 <a 
+                  href="https://www.rust-lang.org" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Rust"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+                    alt="Rust"
+                    width={20}
+                    height={20}
+                    className="rust-icon"
+                  />
+                  <span>Rust</span>
+                </a>
+                
+                <a 
+                  href="https://go.dev" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Go"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
+                    alt="Go"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Go</span>
+                </a>
+                
+                <a 
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="JavaScript"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"                        
+                    alt="JavaScript"
+                    width={20}
+                    height={20}
+                  />
+                  <span>JavaScript</span>
+                </a>
               </div>
-              
-              <div>
-                <h3 className="text-lg font-medium mb-2">Other Interests</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">3D Printing</span>
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">Self-Hosting</span>
-                </div>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium mb-3">Other Interests</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="interest-tag">Self Hosting</span>
+                <span className="interest-tag">Privacy</span>
+                <span className="interest-tag">3D Printing</span>
               </div>
             </div>
           </div>
@@ -91,21 +162,30 @@ export default function About() {
         {/* Contact Information */}
         <section className="card">
           <h2 className="text-2xl font-semibold mb-4">Get In Touch</h2>
-          <div className="space-y-3">
-            <div className="flex items-center gap-3">
-              <div className="w-4 h-4 bg-blue-500 rounded-sm flex-shrink-0"></div>
+          <div className="space-y-4">
+            <div className="contact-item">
+              <div className="contact-icon bg-blue-500"></div>
               <div>
                 <p className="font-medium">Signal</p>
-                <p className="text-sm opacity-75">prestonhorne.01</p>
+                <p className="text-sm opacity-75">prestonhorne [ dot 01 ]</p>
               </div>
             </div>
             
-            <div className="flex items-center gap-3">
-              <div className="w-4 h-4 bg-red-500 rounded-sm flex-shrink-0"></div>
+            <div className="contact-item">
+              <div className="contact-icon bg-red-500"></div>
               <div>
                 <p className="font-medium">Email</p>
-                <p className="text-sm opacity-75">me [at prestonhorne dot com]</p>
-                <p className="text-sm opacity-75">preston.m.horne [at vanderbilt dot edu]</p>
+                <p className="text-sm opacity-75">me [ at prestonhorne dot com ]</p>
+                <p className="text-sm opacity-75">preston.m.horne [ at vanderbilt dot edu ]</p>
+              </div>
+            </div>
+            
+            <div className="contact-item">
+              <div className="contact-icon bg-orange-500"></div>
+              <div>
+                <p className="font-medium">GPG</p>
+                <p className="text-sm opacity-75">Public Key</p>
+                <p className="text-sm opacity-75">Fingerprint</p>
               </div>
             </div>
           </div>
@@ -118,15 +198,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <h3 className="font-medium mb-2">Bitcoin</h3>
-            <p className="text-sm font-mono bg-gray-100 dark:bg-gray-800 p-2 rounded">
+            <div className="crypto-address">
               [Bitcoin Address]
-            </p>
+            </div>
           </div>
           <div>
             <h3 className="font-medium mb-2">Monero</h3>
-            <p className="text-sm font-mono bg-gray-100 dark:bg-gray-800 p-2 rounded">
+            <div className="crypto-address">
               [Monero Address]
-            </p>
+            </div>
           </div>
         </div>
       </section>
