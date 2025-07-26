@@ -43,23 +43,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-        {/* GPG */}
-        <div className="tech-link">
-          <Image
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/gnuprivacyguard.svg"
-            alt="GPG"
-            width={24}
-            height={24}
-          />
-          <div className="flex-1">
-            <p className="font-semibold text-lg mb-2">GPG Encryption</p>
-            <div className="space-y-1">
-              <p className="opacity-75 text-sm">Public Key</p>
-              <p className="opacity-75 text-sm">Fingerprint</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
