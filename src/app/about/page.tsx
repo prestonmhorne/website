@@ -68,6 +68,24 @@ export default function About() {
     }
   ];
 
+  const operatingSystems = [
+    {
+      name: "Arch Linux",
+      url: "https://archlinux.org",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg"
+    },
+    {
+      name: "Debian",
+      url: "https://www.debian.org",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg"
+    },
+    {
+      name: "GrapheneOS",
+      url: "https://grapheneos.org",
+      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/grapheneos.svg"
+    }
+  ];
+
   const interests = [
     "Data Privacy",
     "Operational Security (OPSEC)",
@@ -148,6 +166,31 @@ export default function About() {
                       height={20}
                     />
                     <span>{tool.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Operating Systems */}
+            <div>
+              <h3 className="text-lg font-medium mb-4">Operating Systems</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {operatingSystems.map((os) => (
+                  <a 
+                    key={os.name}
+                    href={os.url} 
+                    className="tech-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={os.name}
+                  >
+                    <Image
+                      src={os.icon}
+                      alt={os.name}
+                      width={20}
+                      height={20}
+                    />
+                    <span>{os.name}</span>
                   </a>
                 ))}
               </div>
