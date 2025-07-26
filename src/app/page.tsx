@@ -15,20 +15,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* Status Section */}
-      <section className="card max-w-2xl mx-auto text-center">
-        <div className="space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 rounded-full">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse"></div>
-            <span className="font-medium">Site Under Construction</span>
-          </div>
-          
-          <p className="text-base md:text-lg">
-            Currently building my portfolio website.
-          </p>
-        </div>
-      </section>
     </div>
   );
 }

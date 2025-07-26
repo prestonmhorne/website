@@ -1,4 +1,4 @@
-import Link from 'next/link';
+//import Link from 'next/link';
 import Image from 'next/image';
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
       </header>
       
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="space-y-8">
         {/* Introduction */}
         <section className="card">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
