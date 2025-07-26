@@ -1,7 +1,81 @@
-//import Link from 'next/link';
 import Image from 'next/image';
 
 export default function About() {
+  const programmingLanguages = [
+    {
+      name: "Python",
+      url: "https://www.python.org",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
+      name: "C/C++",
+      url: "https://isocpp.org",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg"
+    },
+    {
+      name: "C#",
+      url: "https://dotnet.microsoft.com/en-us/languages/csharp",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+    },
+    {
+      name: "Rust",
+      url: "https://www.rust-lang.org",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+      className: "rust-icon"
+    },
+    {
+      name: "Go",
+      url: "https://go.dev",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
+    },
+    {
+      name: "JavaScript",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+    }
+  ];
+
+  const developmentTools = [
+    {
+      name: "Docker",
+      url: "https://www.docker.com",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+    },
+    {
+      name: "Kubernetes",
+      url: "https://kubernetes.io",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
+    },
+    {
+      name: "Unity",
+      url: "https://unity.com",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+    },
+    {
+      name: "Ollama",
+      url: "https://ollama.com",
+      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/ollama.svg"
+    },
+    {
+      name: "Raspberry Pi",
+      url: "https://www.raspberrypi.com",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-plain.svg"
+    },
+    {
+      name: "Neovim",
+      url: "https://neovim.io",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
+    }
+  ];
+
+  const interests = [
+    "Self-Hosting",
+    "Operational Security (OPSEC)",
+    "System Administration",
+    "Data Privacy",
+    "Free and open-source software (FOSS)"
+  ];
+
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <header className="text-center mb-8">
@@ -12,231 +86,84 @@ export default function About() {
         {/* Introduction */}
         <section className="card">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
-            I&apos;m passionate about software development, artificial intelligence, and emerging technologies. 
-          </p>
-          <p className="text-lg leading-relaxed mb-4">
-            When I&apos;m not immersed in computer science,
-            you will likely find me at the gym lifting weights, relaxing in bed watching old animated cartoons, or getting lost in a good book. I also listen to plenty
-            of music. Some of my favorite bands are Radiohead and Nirvana. 
-          </p>
+          <div className="space-y-4">
+            <p className="text-lg leading-relaxed">
+              Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
+              I&apos;m passionate about software development, artificial intelligence, and emerging technologies.
+            </p>
+            <p className="text-lg leading-relaxed">
+              When I&apos;m not immersed in computer science, you will likely find me at the gym lifting weights, 
+              relaxing in bed watching old animated cartoons, or getting lost in a fantasy novel. I also listen to plenty
+              of music. Some of my favorite bands are Radiohead and Nirvana.
+            </p>
+          </div>
         </section>
 
         {/* Interests */}
         <section className="card">
-          <h2 className="text-2xl font-semibold mb-4">Interests</h2>
+          <h2 className="text-2xl font-semibold mb-6">Technical Interests</h2>
           
-          <div className="space-y-4">
+          <div className="space-y-6">
+            {/* Programming Languages */}
             <div>
-              <h3 className="text-lg font-medium mb-3">Programming Languages</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <a 
-                  href="https://www.python.org" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Python"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-                    alt="Python"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Python</span>
-                </a>
-                
-                <a 
-                  href="https://isocpp.org" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="C++"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" 
-                    alt="C/C++"
-                    width={20}
-                    height={20}
-                  />
-                  <span>C/C++</span>
-                </a>
-                
-                <a 
-                  href="https://dotnet.microsoft.com/en-us/languages/csharp" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="C#"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
-                    alt="C#"
-                    width={20}
-                    height={20}
-                  />
-                  <span>C#</span>
-                </a>
-                
-                 <a 
-                  href="https://www.rust-lang.org" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Rust"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
-                    alt="Rust"
-                    width={20}
-                    height={20}
-                    className="rust-icon"
-                  />
-                  <span>Rust</span>
-                </a>
-                
-                <a 
-                  href="https://go.dev" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Go"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
-                    alt="Go"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Go</span>
-                </a>
-                
-                <a 
-                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="JavaScript"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"                        
-                    alt="JavaScript"
-                    width={20}
-                    height={20}
-                  />
-                  <span>JavaScript</span>
-                </a>
+              <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {programmingLanguages.map((lang) => (
+                  <a 
+                    key={lang.name}
+                    href={lang.url} 
+                    className="tech-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={lang.name}
+                  >
+                    <Image
+                      src={lang.icon}
+                      alt={lang.name}
+                      width={20}
+                      height={20}
+                      className={lang.className || ""}
+                    />
+                    <span>{lang.name}</span>
+                  </a>
+                ))}
               </div>
             </div>
+
+            {/* Development Tools */}
             <div>
-              <h3 className="text-lg font-medium mb-3">Development Tools</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <a 
-                  href="https://www.docker.com" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Docker"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                    alt="Docker"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Docker</span>
-                </a>
-
-                <a 
-                  href="https://kubernetes.io" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Kubernetes"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
-                    alt="Kubernetes"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Kubernetes</span>
-                </a>
-                
-                <a 
-                  href="https://unity.com" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Unity"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
-                    alt="Unity"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Unity</span>
-                </a>
-
-                <a 
-                  href="https://ollama.com" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Ollama"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/ollama.svg"
-                    alt="Ollama"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Ollama</span>
-                </a>
-
-                <a 
-                  href="https://www.raspberrypi.com" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Raspberry Pi"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-plain.svg"
-                    alt="Raspberry Pi"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Raspberry Pi</span>
-                </a>
-
-                <a 
-                  href="https://neovim.io" 
-                  className="tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Neovim"
-                >
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
-                    alt="Neovim"
-                    width={20}
-                    height={20}
-                  />
-                  <span>Neovim</span>
-                </a>
+              <h3 className="text-lg font-medium mb-4">Development Tools</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {developmentTools.map((tool) => (
+                  <a 
+                    key={tool.name}
+                    href={tool.url} 
+                    className="tech-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={tool.name}
+                  >
+                    <Image
+                      src={tool.icon}
+                      alt={tool.name}
+                      width={20}
+                      height={20}
+                    />
+                    <span>{tool.name}</span>
+                  </a>
+                ))}
               </div>
             </div>
+
+            {/* Topics */}
             <div>
-              <h3 className="text-lg font-medium mb-3">Topics</h3>
+              <h3 className="text-lg font-medium mb-4">Areas of Interest</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="interest-tag">Self-Hosting</span>
-                <span className="interest-tag">Operational Security (OPSEC)</span>
-                <span className="interest-tag">System Administration</span>
-                <span className="interest-tag">Data Privacy</span>
-                <span className="interest-tag">Free and open-source software (FOSS)</span>
+                {interests.map((interest) => (
+                  <span key={interest} className="interest-tag">
+                    {interest}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
