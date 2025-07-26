@@ -130,7 +130,42 @@ export default function About() {
                 </a>
               </div>
             </div>
-            
+            <div>
+              <h3 className="text-lg font-medium mb-3">Development Tools</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a 
+                  href="https://www.docker.com" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Docker"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                    alt="Docker"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Docker</span>
+                </a>
+                
+                <a 
+                  href="https://unity.com" 
+                  className="tech-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Unity"
+                >
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+                    alt="Unity"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Unity</span>
+                </a>
+              </div>
+            </div>
             <div>
               <h3 className="text-lg font-medium mb-3">Other Interests</h3>
               <div className="flex flex-wrap gap-2">
