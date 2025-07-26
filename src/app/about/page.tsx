@@ -235,6 +235,7 @@ export default function About() {
               <div className="flex flex-wrap gap-2">
                 <span className="interest-tag">Self-Hosting</span>
                 <span className="interest-tag">Operational Security</span>
+                <span className="interest-tag">System Administration</span>
                 <span className="interest-tag">Data Privacy</span>
               </div>
             </div>
