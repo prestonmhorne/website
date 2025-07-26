@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import Navigation from './components/Navigation';
+import Image from 'next/image';
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -26,11 +27,13 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
           >
-            <img 
-              className="footer-image" 
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-              alt="GitHub"
-            />
+          <Image
+            className="footer-image"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+            alt="GitHub"
+            width={24}
+            height={24}
+          />
             <span className="ml-2">GitHub</span>
           </a>
           <a 
@@ -40,10 +43,12 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
           >
-            <img 
+            <Image
               className="footer-image" 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
               alt="LinkedIn"
+              width={24}
+              height={24}
             />
             <span className="ml-2">LinkedIn</span>
           </a>

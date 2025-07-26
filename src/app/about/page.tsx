@@ -16,8 +16,8 @@ export default function About() {
           <div className="card">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-lg leading-relaxed mb-4">
-              Hello! I'm Preston Horne, a graduate student pursuing an MS in Computer Science at Vanderbilt University. 
-              I'm passionate about software development, systems programming, and emerging technologies.
+              Hello! I&apos;m Preston Horne, a graduate student pursuing an MS in Computer Science at Vanderbilt University. 
+              I&apos;m passionate about software development, systems programming, and emerging technologies.
             </p>
             <Link 
               href="/about/resume" 
