@@ -19,11 +19,7 @@ export default function About() {
           <p className="text-lg leading-relaxed mb-4">
             When I&apos;m not immersed in computer science,
             you will likely find me at the gym lifting weights, relaxing in bed watching old animated cartoons, or getting lost in a good book. I also listen to plenty
-            of music. Some of my favorite bands include Radiohead and Nirvana. 
-          </p>
-
-          <p className="text-lg leading-relaxed mb-4">
-            One of my favorite 
+            of music. Some of my favorite bands are Radiohead and Nirvana. 
           </p>
         </section>
 
@@ -237,9 +233,10 @@ export default function About() {
               <h3 className="text-lg font-medium mb-3">Topics</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="interest-tag">Self-Hosting</span>
-                <span className="interest-tag">Operational Security</span>
+                <span className="interest-tag">Operational Security (OPSEC)</span>
                 <span className="interest-tag">System Administration</span>
                 <span className="interest-tag">Data Privacy</span>
+                <span className="interest-tag">Free and open-source software (FOSS)</span>
               </div>
             </div>
           </div>
@@ -261,89 +258,7 @@ export default function About() {
             View PC Specifications →
           </Link>
         </section>
-
-        {/* Contact Information */}
-        <section className="card">
-          <h2 className="text-2xl font-semibold mb-4">Get In Touch</h2>
-          <div className="space-y-3">
-            <div className="tech-link">
-              <Image
-                src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/signal.svg"
-                alt="Signal"
-                width={20}
-                height={20}
-              />
-              <div>
-                <p className="font-medium">Signal</p>
-                <p className="text-sm opacity-75">prestonhorne [ dot 01 ]</p>
-              </div>
-            </div>
-            
-            <div className="tech-link">
-              <Image
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/maildotru.svg"
-                alt="Email"
-                width={20}
-                height={20}
-              />
-              <div>
-                <p className="font-medium">Email</p>
-                <p className="text-sm opacity-75">me [ at prestonhorne dot com ]</p>
-                <p className="text-sm opacity-75">preston.m.horne [ at vanderbilt dot edu ]</p>
-              </div>
-            </div>
-            
-            <div className="tech-link">
-              <Image
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/gnuprivacyguard.svg"
-                alt="GPG"
-                width={20}
-                height={20}
-              />
-              <div>
-                <p className="font-medium">GPG</p>
-                <p className="text-sm opacity-75">[Public Key]</p>
-                <p className="text-sm opacity-75">[Fingerprint]</p>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
-
-      {/* Cryptocurrency */}
-      <section className="card">
-        <h2 className="text-2xl font-semibold mb-4">Cryptocurrency</h2>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="tech-link">
-            <Image
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/bitcoin.svg"
-              alt="Bitcoin"
-              width={20}
-              height={20}
-            />
-            <div>
-              <h3 className="font-medium mb-2">Bitcoin</h3>
-              <div className="crypto-address">
-                [Bitcoin Address]
-              </div>
-            </div>
-          </div>
-          <div className="tech-link">
-            <Image
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/monero.svg"
-              alt="Monero"
-              width={20}
-              height={20}
-            />
-            <div>
-              <h3 className="font-medium mb-2">Monero</h3>
-              <div className="crypto-address">
-                [Monero Address]
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
