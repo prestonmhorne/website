@@ -21,7 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Get theme preference on mount
+    // Get theme preference on mount - don't set it here since script already did
     let initialTheme: Theme = 'light';
     
     try {
@@ -34,13 +34,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       }
     } catch {
       console.warn('Could not access localStorage for theme');
+      // Fallback to system preference
+      initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
     setTheme(initialTheme);
     setMounted(true);
     
-    // Apply theme immediately after getting preference
-    document.documentElement.setAttribute('data-theme', initialTheme);
+    // Don't set the attribute here - the script already did it
+    // document.documentElement.setAttribute('data-theme', initialTheme);
   }, []);
 
   // Save theme changes to localStorage and apply to DOM

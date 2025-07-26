@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
+import ThemeScript from './components/ThemeScript';
 import Image from 'next/image';
 import "./globals.css";
 
@@ -131,7 +132,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <ThemeScript />
+      </head>
       <body className={`${geistMono.variable} antialiased`}>
         <ThemeProvider>
           <LayoutContent>
