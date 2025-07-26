@@ -20,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} antialiased`}>
-        <nav>
+      <body className={`${geistMono.variable} antialiased min-h-screen grid grid-rows-[auto_1fr_auto]`}>
+        <nav className="p-4 border-b border-foreground">
           <Link href="/" className="text-xl font-semibold">
             Home
           </Link>
