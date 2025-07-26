@@ -224,9 +224,12 @@ body {
 .footer-image {
   width: 20px;
   height: 20px;
-  filter: brightness(0) saturate(100%);
-  transition: filter 0.2s ease;
+  transition: none;
   flex-shrink: 0;
+}
+
+.footer-image {
+  filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .footer-image {
@@ -240,7 +243,7 @@ body {
 }
 
 .footer-social-link:hover .footer-image {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
 }
 
 /* Footer Tech Stack */
@@ -294,9 +297,12 @@ body {
 .footer-tech-icon {
   width: 16px;
   height: 16px;
-  filter: brightness(0) saturate(100%);
-  transition: filter 0.2s ease;
+  transition: none;
   flex-shrink: 0;
+}
+
+.footer-tech-icon {
+  filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .footer-tech-icon {
@@ -310,7 +316,7 @@ body {
 }
 
 .footer-tech-link:hover .footer-tech-icon {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
 }
 
 /* Components */
@@ -382,9 +388,12 @@ body {
 .tech-link img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) saturate(100%);
-  transition: filter 0.2s ease;
+  transition: none;
   flex-shrink: 0;
+}
+
+.tech-link img {
+  filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .tech-link img {
@@ -407,7 +416,7 @@ body {
 
 .tech-link:hover img,
 .tech-link:hover .rust-icon {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
 }
 
 /* Interest Tags */
@@ -501,15 +510,12 @@ body {
     padding: 1.5rem 1rem;
   }
   
-  /* Footer stays in column layout on mobile */
   .footer-social {
-    flex-direction: column;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
   
   .footer-tech-links {
-    flex-direction: column;
     gap: 0.75rem;
   }
   
@@ -563,15 +569,12 @@ body {
     padding: 1rem 0.75rem;
   }
   
-  /* Footer remains in column layout */
   .footer-social {
-    flex-direction: column;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
   }
   
   .footer-tech-links {
-    flex-direction: column;
     gap: 0.5rem;
   }
   
@@ -639,15 +642,12 @@ body {
     margin-bottom: 0;
   }
   
-  /* Footer remains in column layout */
   .footer-social {
-    flex-direction: column;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
   }
   
   .footer-tech-links {
-    flex-direction: column;
     gap: 0.5rem;
   }
 }
