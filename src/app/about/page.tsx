@@ -69,10 +69,8 @@ export default function About() {
   ];
 
   const interests = [
-    "Self-Hosting",
-    "Operational Security (OPSEC)",
-    "System Administration",
     "Data Privacy",
+    "Operational Security (OPSEC)",
     "Free and open-source software (FOSS)"
   ];
 
