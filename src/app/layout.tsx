@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 
 // Enhanced Footer Component
 function Footer() {
-  const currentYear = new Date().getFullYear();
   
   return (
     <footer className="footer-container">
