@@ -8,8 +8,8 @@ export default function Home() {
 
   
   const fullText = 'Preston Horne';
-  const typingDuration = 5000; // 5 seconds to type
-  const pauseDuration = 10000; // 10 seconds pause before repeating
+  const typingDuration = 5000; 
+  const pauseDuration = 10000;
   
   useEffect(() => {
     let typingInterval: NodeJS.Timeout;
@@ -28,7 +28,6 @@ export default function Home() {
         } else {
           clearInterval(typingInterval);
           
-          // Wait 10 seconds before restarting
           resetTimeout = setTimeout(() => {
             startTyping();
           }, pauseDuration);
@@ -36,7 +35,6 @@ export default function Home() {
       }, charDelay);
     };
     
-    // Start the first animation
     startTyping();
     
     return () => {
@@ -45,7 +43,7 @@ export default function Home() {
     };
   }, []);
   
-  // Cursor blinking effect
+
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setShowCursor(prev => !prev);
