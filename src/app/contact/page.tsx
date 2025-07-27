@@ -6,17 +6,15 @@ export default function Contact() {
       {/* Header */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
-      </header>
-      <p className="text-lg opacity-75 max-w-2xl mx-auto">
+        <p className="text-lg opacity-75 max-w-2xl mx-auto">
           Feel free to reach out through the following methods. I&apos;m always interested in discussing technology, projects, or potential collaborations.
         </p>
-
-      {/* Contact Methods */}
+      </header>
       <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
         {/* Signal */}
         <div className="tech-link">
           <Image
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/signal.svg"
+            src="/icons/signal.svg"
             alt="Signal"
             width={24}
             height={24}
@@ -30,7 +28,7 @@ export default function Contact() {
         {/* Email */}
         <div className="tech-link">
           <Image
-            src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/envelope.svg"
+            src="/icons/envelope.svg"
             alt="Email"
             width={24}
             height={24}
