@@ -415,7 +415,6 @@ body {
   font-weight: 500;
   transition: all 0.2s ease;
   border: 1px solid transparent;
-  cursor: pointer;
   text-align: center;
   margin: 0.25rem;
 }
