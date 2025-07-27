@@ -37,7 +37,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  manifest: "/manifest.json",
 };
 
 function LayoutContent({ children }: { children: React.ReactNode }) {
