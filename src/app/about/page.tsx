@@ -5,33 +5,33 @@ export default function About() {
     {
       name: "Python",
       url: "https://www.python.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+      icon: "/icons/python.svg"
     },
     {
       name: "C/C++",
       url: "https://isocpp.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg"
+      icon: "/icons/cplusplus.svg"
     },
     {
       name: "C#",
       url: "https://dotnet.microsoft.com/en-us/languages/csharp",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+      icon: "/icons/csharp.svg"
     },
     {
       name: "Rust",
       url: "https://www.rust-lang.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+      icon: "/icons/rust.svg",
       className: "rust-icon"
     },
     {
       name: "Go",
       url: "https://go.dev",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
+      icon: "/icons/go.svg"
     },
     {
       name: "JavaScript",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+      icon: "/icons/javascript.svg"
     }
   ];
 
@@ -39,32 +39,32 @@ export default function About() {
     {
       name: "Docker",
       url: "https://www.docker.com",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+      icon: "/icons/docker.svg"
     },
     {
       name: "Kubernetes",
       url: "https://kubernetes.io",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
+      icon: "/icons/kubernetes.svg"
     },
     {
       name: "Unity",
       url: "https://unity.com",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+      icon: "/icons/unity.svg"
     },
     {
       name: "Ollama",
       url: "https://ollama.com",
-      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/ollama.svg"
+      icon: "/icons/ollama.svg"
     },
     {
       name: "Raspberry Pi",
       url: "https://www.raspberrypi.com",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-plain.svg"
+      icon: "/icons/raspberrypi.svg"
     },
     {
       name: "Neovim",
       url: "https://neovim.io",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
+      icon: "/icons/neovim.svg"
     }
   ];
 
@@ -72,17 +72,17 @@ export default function About() {
     {
       name: "Arch Linux",
       url: "https://archlinux.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg"
+      icon: "/icons/archlinux.svg"
     },
     {
       name: "Debian",
       url: "https://www.debian.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg"
+      icon: "/icons/debian.svg"
     },
     {
       name: "GrapheneOS",
       url: "https://grapheneos.org",
-      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v13/icons/grapheneos.svg"
+      icon: "/icons/grapheneos.svg"
     }
   ];
 

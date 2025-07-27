@@ -5,12 +5,12 @@ export default function Footer() {
     {
       name: "GitHub",
       url: "https://github.com/preston-horne",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      icon: "/icons/github.svg"
     },
     {
       name: "LinkedIn", 
       url: "https://www.linkedin.com/in/preston-horne-612964368/",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+      icon: "/icons/linkedin.svg"
     }
   ];
 
@@ -18,22 +18,22 @@ export default function Footer() {
     {
       name: "React",
       url: "https://react.dev",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+      icon: "/icons/react.svg"
     },
     {
       name: "Next.js",
       url: "https://nextjs.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
+      icon: "/icons/nextjs.svg"
     },
     {
       name: "TypeScript",
       url: "https://www.typescriptlang.org",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+      icon: "/icons/typescript.svg"
     },
     {
       name: "Tailwind CSS",
       url: "https://tailwindcss.com",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      icon: "icons/tailwindcss.svg"
     }
   ];
 
