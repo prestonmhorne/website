@@ -9,7 +9,7 @@ export default function Footer() {
     },
     {
       name: "LinkedIn", 
-      url: "https://www.linkedin.com/in/preston-horne-612964368/",
+      url: "https://www.linkedin.com/in/prestonhorne/",
       icon: "/icons/linkedin.svg"
     }
   ];
