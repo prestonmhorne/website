@@ -67,10 +67,9 @@ export default function About() {
   ];
 
   const interests = [
-    "Cybersecurity",
-    "Computer Systems/Architecture",
-    "Free and Open-Source Software (FOSS)",
-
+    "Privacy",
+    "Decentralization",
+    "Free and open-source software (FOSS)",
   ];
 
   return (
