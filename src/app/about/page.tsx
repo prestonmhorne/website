@@ -37,16 +37,6 @@ export default function About() {
       icon: "/icons/docker.svg"
     },
     {
-      name: "Kubernetes",
-      url: "https://kubernetes.io",
-      icon: "/icons/kubernetes.svg"
-    },
-    {
-      name: "Ollama",
-      url: "https://ollama.com",
-      icon: "/icons/ollama.svg"
-    },
-    {
       name: "Raspberry Pi",
       url: "https://www.raspberrypi.com",
       icon: "/icons/raspberrypi.svg"
