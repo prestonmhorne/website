@@ -96,7 +96,7 @@ export default function About() {
           <div className="space-y-4">
             <p className="text-lg leading-relaxed">
               Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
-              I&apos;m passionate about software development, computer systems, and emerging technologies.
+              I&apos;m passionate about systems programming, cybersecurity, and emerging technologies.
             </p>
             <p className="text-lg leading-relaxed">
               When I&apos;m not thinking about computer science, you will likely find me at the gym lifting weights, 
