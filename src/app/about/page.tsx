@@ -13,11 +13,6 @@ export default function About() {
       icon: "/icons/cplusplus.svg"
     },
     {
-      name: "C#",
-      url: "https://dotnet.microsoft.com/en-us/languages/csharp",
-      icon: "/icons/csharp.svg"
-    },
-    {
       name: "Rust",
       url: "https://www.rust-lang.org",
       icon: "/icons/rust.svg",
@@ -45,11 +40,6 @@ export default function About() {
       name: "Kubernetes",
       url: "https://kubernetes.io",
       icon: "/icons/kubernetes.svg"
-    },
-    {
-      name: "Unity",
-      url: "https://unity.com",
-      icon: "/icons/unity.svg"
     },
     {
       name: "Ollama",
