@@ -77,9 +77,10 @@ export default function About() {
   ];
 
   const interests = [
-    "Data Privacy",
-    "Operational Security (OPSEC)",
-    "Free and open-source software (FOSS)"
+    "Cybersecurity",
+    "Computer Systems/Architecture",
+    "Free and Open-Source Software (FOSS)",
+
   ];
 
   return (
@@ -95,11 +96,11 @@ export default function About() {
           <div className="space-y-4">
             <p className="text-lg leading-relaxed">
               Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
-              I&apos;m passionate about software development, artificial intelligence, and emerging technologies.
+              I&apos;m passionate about software development, computer systems, and emerging technologies.
             </p>
             <p className="text-lg leading-relaxed">
-              When I&apos;m not immersed in computer science, you will likely find me at the gym lifting weights, 
-              watching old animated cartoons, or getting lost in a fantasy novel. I also listen to plenty
+              When I&apos;m not thinking about computer science, you will likely find me at the gym lifting weights, 
+              watching old animated cartoons, or getting lost in a good book. I also listen to plenty
               of music. Some of my favorite bands are Radiohead and Nirvana.
             </p>
           </div>
