@@ -24,9 +24,9 @@ export default function About() {
       icon: "/icons/go.svg"
     },
     {
-      name: "JavaScript",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      icon: "/icons/javascript.svg"
+      name: "Assembly",
+      url: "https://en.wikipedia.org/wiki/Assembly_language",
+      icon: "/icons/assembly.svg"
     }
   ];
 
