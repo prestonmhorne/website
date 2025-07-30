@@ -14,14 +14,14 @@ export default function About() {
       className: "rust-icon"
     },
     {
-      name: "Python",
-      url: "https://www.python.org",
-      icon: "/icons/python.svg"
-    },
-    {
       name: "Go",
       url: "https://go.dev",
       icon: "/icons/go.svg"
+    },
+    {
+      name: "Python",
+      url: "https://www.python.org",
+      icon: "/icons/python.svg"
     },
     {
       name: "Assembly",
