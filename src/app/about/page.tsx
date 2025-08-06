@@ -27,7 +27,12 @@ export default function About() {
       name: "Assembly",
       url: "https://en.wikipedia.org/wiki/Assembly_language",
       icon: "/icons/assembly.svg"
-    }
+    },
+    {
+      name: "JavaScript",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      icon: "/icons/javascript.svg"
+    },
   ];
 
   const developmentTools = [
