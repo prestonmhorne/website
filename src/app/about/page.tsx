@@ -92,11 +92,6 @@ export default function About() {
               Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
               I&apos;m passionate about systems programming, cybersecurity, and emerging technologies.
             </p>
-            <p className="text-lg leading-relaxed">
-              When I&apos;m not learning computer science, you will likely find me at the gym lifting weights, 
-              watching old animated cartoons, or getting lost in a good book. I also listen to plenty
-              of music. Some of my favorite bands are Radiohead and Nirvana.
-            </p>
           </div>
         </section>
 
