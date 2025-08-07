@@ -12,9 +12,6 @@
     "binding": "ASSETS",
     "directory": ".open-next/assets"
   },
-  "build": {
-    "command": "npm run build && npx @opennextjs/cloudflare build"
-  },
   "observability": {
     "enabled": true
   },
