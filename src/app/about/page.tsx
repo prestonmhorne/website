@@ -8,6 +8,11 @@ export default function About() {
       icon: "/icons/c.svg"
     },
     {
+      name: "C++",
+      url: "https://isocpp.org",
+      icon: "/icons/cplusplus.svg"
+    },
+    {
       name: "Rust",
       url: "https://www.rust-lang.org",
       icon: "/icons/rust.svg",
@@ -17,11 +22,6 @@ export default function About() {
       name: "Assembly",
       url: "https://en.wikipedia.org/wiki/Assembly_language",
       icon: "/icons/assembly.svg"
-    },
-    {
-      name: "C++",
-      url: "https://isocpp.org",
-      icon: "/icons/cplusplus.svg"
     },
     {
       name: "Go",
