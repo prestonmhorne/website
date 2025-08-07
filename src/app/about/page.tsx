@@ -3,15 +3,25 @@ import Image from 'next/image';
 export default function About() {
   const programmingLanguages = [
     {
-      name: "C/C++",
-      url: "https://isocpp.org",
-      icon: "/icons/cplusplus.svg"
+      name: "C",
+      url: "https://www.c-language.org",
+      icon: "/icons/c.svg"
     },
     {
       name: "Rust",
       url: "https://www.rust-lang.org",
       icon: "/icons/rust.svg",
       className: "rust-icon"
+    },
+    {
+      name: "Assembly",
+      url: "https://en.wikipedia.org/wiki/Assembly_language",
+      icon: "/icons/assembly.svg"
+    },
+    {
+      name: "C++",
+      url: "https://isocpp.org",
+      icon: "/icons/cplusplus.svg"
     },
     {
       name: "Go",
@@ -22,16 +32,6 @@ export default function About() {
       name: "Python",
       url: "https://www.python.org",
       icon: "/icons/python.svg"
-    },
-    {
-      name: "Assembly",
-      url: "https://en.wikipedia.org/wiki/Assembly_language",
-      icon: "/icons/assembly.svg"
-    },
-    {
-      name: "JavaScript",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      icon: "/icons/javascript.svg"
     },
   ];
 
