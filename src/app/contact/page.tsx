@@ -6,9 +6,6 @@ export default function Contact() {
       {/* Header */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
-        <p className="text-lg opacity-75 max-w-2xl mx-auto">
-          Feel free to reach out through the following methods. I&apos;m always interested in discussing technology, projects, or potential collaborations.
-        </p>
       </header>
       <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
         {/* Signal */}
