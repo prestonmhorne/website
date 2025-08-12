@@ -54,20 +54,13 @@ export default function Home() {
   
   return (
     <div className="max-w-4xl mx-auto">
-      <section className="text-center space-y-32 py-16">
-        <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Welcome!
-          </h1>
-          <div className="space-y-2 pt-26">
+      <section className="text-center space-y-32 py-30">
             <div className="flex justify-center">
-              <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono bg-black text-green-300 p-4 sm:p-6 md:p-8 rounded-lg min-h-[3rem] sm:min-h-[4rem] md:min-h-[5rem] lg:min-h-[6rem] flex items-center whitespace-nowrap overflow-x-auto">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono bg-black text-green-300 p-4 sm:p-6 md:p-8 rounded-lg min-h-[3rem] sm:min-h-[4rem] md:min-h-[5rem] lg:min-h-[6rem] flex items-center whitespace-nowrap overflow-x-auto">
                 <span className="text-green-300 flex-shrink-0"></span>
                 <span className="flex-shrink-0 ml-2">{displayText}</span>
-                <span className={`inline-block w-1 sm:w-2 md:w-2 h-4 sm:h-6 md:h-8 lg:h-10 xl:h-12 bg-green-400 ml-1 flex-shrink-0 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}/>
+                <span className={`inline-block w-1 sm:w-2 md:w-2 h-10 md:h-13 lg:h-16 xl:h-18 bg-green-400 ml-1 flex-shrink-0 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}/>
               </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

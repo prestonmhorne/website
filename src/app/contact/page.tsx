@@ -3,12 +3,10 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
-      {/* Header */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
       </header>
       <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
-        {/* Signal */}
         <div className="tech-link">
           <Image
             src="/icons/signal.svg"
@@ -21,8 +19,6 @@ export default function Contact() {
             <p className="opacity-75">prestonhorne [ dot 01 ]</p>
           </div>
         </div>
-
-        {/* Email */}
         <div className="tech-link">
           <Image
             src="/icons/envelope.svg"
