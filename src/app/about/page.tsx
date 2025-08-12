@@ -87,7 +87,7 @@ export default function About() {
         <section className="card">
           <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
             <p className="indent-8 text-lg leading-relaxed">
-              Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
+              Hello! I&apos;m a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
               I&apos;m passionate about systems programming, cybersecurity, and emerging technologies.
             </p>
         </section>
