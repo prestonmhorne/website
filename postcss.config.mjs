@@ -3,4 +3,4 @@ const config = {
 };
 
 export default config;
-// de
+// deploy
