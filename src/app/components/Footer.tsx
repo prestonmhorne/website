@@ -40,7 +40,6 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Social Links */}
         <div className="footer-social">
           {socialLinks.map((link) => (
             <a
@@ -63,7 +62,6 @@ export default function Footer() {
           ))}
         </div>
         
-        {/* Tech Stack */}
         <div className="footer-info">
           <div className="footer-tech-stack">
             <span className="footer-made-text">Made with</span>

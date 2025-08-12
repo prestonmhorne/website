@@ -17,7 +17,6 @@ export default function Navigation() {
   return (
     <nav className="nav-container">
       <div className="nav-content">
-        {/* Navigation Links */}
         <div className="nav-links">
           {navItems.map((item) => (
             <Link
@@ -29,8 +28,6 @@ export default function Navigation() {
             </Link>
           ))}
         </div>
-        
-        {/* Theme Toggle Button - Hide until mounted to prevent flicker */}
         <button
           onClick={toggleTheme}
           className="theme-toggle"

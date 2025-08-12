@@ -78,30 +78,22 @@ export default function About() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
+    <div className="max-w-4xl mx-auto">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-4">About Me</h1>
+        <h1 className="text-4xl font-bold">About Me</h1>
       </header>
       
       <div className="space-y-8">
-        {/* Introduction */}
         <section className="card">
-          <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-          <div className="space-y-4">
-            <p className="text-lg leading-relaxed">
+          <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
+            <p className="indent-8 text-lg leading-relaxed">
               Hello! I&apos;m Preston Horne, a graduate student pursuing a MS in Computer Science at Vanderbilt University. 
               I&apos;m passionate about systems programming, cybersecurity, and emerging technologies.
             </p>
-          </div>
         </section>
-
-        {/* Interests */}
         <section className="card">
           <h2 className="text-2xl font-semibold mb-6">Technical Interests</h2>
-          
           <div className="space-y-6">
-            {/* Programming Languages */}
-            <div>
               <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {programmingLanguages.map((lang) => (
@@ -118,16 +110,11 @@ export default function About() {
                       alt={lang.name}
                       width={20}
                       height={20}
-                      className={lang.className || ""}
                     />
                     <span>{lang.name}</span>
                   </a>
                 ))}
-              </div>
             </div>
-
-            {/* Development Tools */}
-            <div>
               <h3 className="text-lg font-medium mb-4">Development Tools</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {developmentTools.map((tool) => (
@@ -149,9 +136,6 @@ export default function About() {
                   </a>
                 ))}
               </div>
-            </div>
-
-            {/* Operating Systems */}
             <div>
               <h3 className="text-lg font-medium mb-4">Operating Systems</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -175,8 +159,6 @@ export default function About() {
                 ))}
               </div>
             </div>
-
-            {/* Topics */}
             <div>
               <h3 className="text-lg font-medium mb-4">Topics</h3>
               <div className="flex flex-wrap gap-2">

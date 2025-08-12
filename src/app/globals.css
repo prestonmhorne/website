@@ -413,17 +413,9 @@ body {
   border-radius: 2rem;
   font-size: 0.875rem;
   font-weight: 500;
-  transition: all 0.2s ease;
   border: 1px solid transparent;
   text-align: center;
   margin: 0.25rem;
-}
-
-.interest-tag:hover {
-  background: var(--accent);
-  color: var(--background);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-light);
 }
 
 /* Status Indicator */
