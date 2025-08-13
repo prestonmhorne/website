@@ -19,11 +19,6 @@ export default function About() {
       className: "rust-icon"
     },
     {
-      name: "Assembly",
-      url: "https://en.wikipedia.org/wiki/Assembly_language",
-      icon: "/icons/assembly.svg"
-    },
-    {
       name: "Go",
       url: "https://go.dev",
       icon: "/icons/go.svg"
