@@ -14,29 +14,6 @@ export default function Footer() {
     }
   ];
 
-  const techStack = [
-    {
-      name: "React",
-      url: "https://react.dev",
-      icon: "/icons/react.svg"
-    },
-    {
-      name: "Next.js",
-      url: "https://nextjs.org",
-      icon: "/icons/nextjs.svg"
-    },
-    {
-      name: "TypeScript",
-      url: "https://www.typescriptlang.org",
-      icon: "/icons/typescript.svg"
-    },
-    {
-      name: "Tailwind CSS",
-      url: "https://tailwindcss.com",
-      icon: "icons/tailwindcss.svg"
-    }
-  ];
-
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -60,32 +37,6 @@ export default function Footer() {
               <span>{link.name}</span>
             </a>
           ))}
-        </div>
-        
-        <div className="footer-info">
-          <div className="footer-tech-stack">
-            <span className="footer-made-text">Made with</span>
-            <div className="footer-tech-links">
-              {techStack.map((tech) => (
-                <a
-                  key={tech.name}
-                  href={tech.url}
-                  className="footer-tech-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={tech.name}
-                >
-                  <Image
-                    src={tech.icon}
-                    alt={tech.name}
-                    width={16}
-                    height={16}
-                    className="footer-tech-icon"
-                  />
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </footer>
