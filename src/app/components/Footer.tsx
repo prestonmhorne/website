@@ -4,7 +4,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/preston-horne",
+      url: "https://github.com/prestonmhorne",
       icon: "/icons/github.svg"
     },
     {
