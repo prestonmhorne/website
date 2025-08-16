@@ -83,7 +83,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
             <p className="indent-8 text-lg leading-relaxed">
               Hello! My name is Preston Horne and I&apos;m a graduate student pursuing a Master of Science in Computer Science at Vanderbilt University. 
-              I&apos;m passionate about software engineering, cybersecurity, and innovative technologies.
+              I&apos;m passionate about systems programming, cybersecurity, and innovative technologies.
             </p>
         </section>
         <section className="card">
