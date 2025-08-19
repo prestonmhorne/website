@@ -24,14 +24,14 @@ export default function About() {
       icon: "/icons/go.svg"
     },
     {
-      name: "Assembly",
-      url: "https://en.wikipedia.org/wiki/Assembly_language",
-      icon: "/icons/assembly.svg"
-    },
-    {
       name: "Python",
       url: "https://www.python.org",
       icon: "/icons/python.svg"
+    },
+    {
+      name: "Assembly",
+      url: "https://en.wikipedia.org/wiki/Assembly_language",
+      icon: "/icons/assembly.svg"
     },
   ];
 
