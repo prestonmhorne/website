@@ -92,7 +92,7 @@ export default function About() {
             </p>
         </section>
         <section className="card">
-          <h2 className="text-2xl font-semibold mb-6">Technical Interests</h2>
+          <h2 className="text-2xl font-semibold mb-6">Interests</h2>
           <div className="space-y-6">
               <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
