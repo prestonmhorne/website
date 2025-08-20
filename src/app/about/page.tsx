@@ -69,7 +69,7 @@ export default function About() {
   const interests = [
     "Privacy",
     "Decentralization",
-    "Free and open-source software (FOSS)"
+    "Free and Open-Source Software (FOSS)"
   ];
 
   return (
