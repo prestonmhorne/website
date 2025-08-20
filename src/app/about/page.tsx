@@ -90,12 +90,12 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6">Interests</h2>
           <div className="space-y-6">
               <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {programmingLanguages.map((lang) => (
                   <a 
                     key={lang.name}
                     href={lang.url} 
-                    className="tech-link"
+                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(20%-0.6rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={lang.name}
@@ -111,12 +111,12 @@ export default function About() {
                 ))}
             </div>
               <h3 className="text-lg font-medium mb-4">Development Tools</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {developmentTools.map((tool) => (
                   <a 
                     key={tool.name}
                     href={tool.url} 
-                    className="tech-link"
+                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={tool.name}
@@ -133,12 +133,12 @@ export default function About() {
               </div>
             <div>
               <h3 className="text-lg font-medium mb-4">Operating Systems</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {operatingSystems.map((os) => (
                   <a 
                     key={os.name}
                     href={os.url} 
-                    className="tech-link"
+                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={os.name}
