@@ -61,9 +61,9 @@ export default function Home() {
   return (
     <div className="h-96 flex items-center justify-center">
       <div className="text-3xl sm:text-4xl md:text-5xl font-mono bg-black text-green-300 p-6 sm:p-8 md:p-12 lg:p-16 rounded-xl inline-flex items-center justify-center">
-        <span className="flex items-center">
+        <span className="flex items-center justify-center relative">
           {displayText}
-          <span className={`inline-block w-2 sm:w-3 md:w-4 h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 bg-green-400 ml-2 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`} />
+          <span className={`absolute h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-2 sm:w-3 md:w-4 ml-2 transition-opacity duration-100 ${showCursor ? 'bg-green-400 opacity-100' : 'opacity-0'}`} style={{left: '100%'}} />
         </span>
       </div>
     </div>
