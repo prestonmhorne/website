@@ -6,35 +6,60 @@ export default function Home() {
   const [showCursor, setShowCursor] = useState(true);
   const fullText = 'Preston Horne';
   const typingDuration = 2500;
+  const deletingDuration = 2500; 
   const pauseDuration = 10000;
+  const pauseBeforeDeleting = 2500; 
 
   useEffect(() => {
-    let typingInterval: NodeJS.Timeout;
-    let resetTimeout: NodeJS.Timeout;
+    let interval: NodeJS.Timeout;
+    let timeout: NodeJS.Timeout;
 
-    const startTyping = () => {
+    const startCycle = () => {
       setDisplayText('');
-      const charDelay = typingDuration / fullText.length;
+      const typeCharDelay = typingDuration / fullText.length;
       let charIndex = 0;
 
-      typingInterval = setInterval(() => {
-        if (charIndex < fullText.length) {
-          setDisplayText(fullText.slice(0, charIndex + 1));
-          charIndex++;
-        } else {
-          clearInterval(typingInterval);
-          resetTimeout = setTimeout(() => {
-            startTyping();
-          }, pauseDuration);
-        }
-      }, charDelay);
+      const typeText = () => {
+        interval = setInterval(() => {
+          if (charIndex < fullText.length) {
+            setDisplayText(fullText.slice(0, charIndex + 1));
+            charIndex++;
+          } else {
+            clearInterval(interval);
+            
+            timeout = setTimeout(() => {
+              deleteText();
+            }, pauseBeforeDeleting);
+          }
+        }, typeCharDelay);
+      };
+
+      const deleteText = () => {
+        const deleteCharDelay = deletingDuration / fullText.length;
+        let deleteIndex = fullText.length;
+
+        interval = setInterval(() => {
+          if (deleteIndex > 0) {
+            deleteIndex--;
+            setDisplayText(fullText.slice(0, deleteIndex));
+          } else {
+            clearInterval(interval);
+            
+            timeout = setTimeout(() => {
+              startCycle();
+            }, pauseDuration);
+          }
+        }, deleteCharDelay);
+      };
+
+      typeText();
     };
 
-    startTyping();
+    startCycle();
 
     return () => {
-      clearInterval(typingInterval);
-      clearTimeout(resetTimeout);
+      clearInterval(interval);
+      clearTimeout(timeout);
     };
   }, []);
 
