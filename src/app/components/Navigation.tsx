@@ -22,7 +22,7 @@ export default function Navigation() {
             <Link
               key={item.href}
               href={item.href}
-              className={`nav-link ${pathname === item.href ? 'active' : ''}`}
+              className={`nav-link hover-accent transition-standard ${pathname === item.href ? 'active' : ''}`}
             >
               {item.label}
             </Link>
@@ -30,7 +30,7 @@ export default function Navigation() {
         </div>
         <button
           onClick={toggleTheme}
-          className="theme-toggle"
+          className="theme-toggle hover-accent hover-border transition-standard"
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           style={{ opacity: mounted ? 1 : 0 }}
         >

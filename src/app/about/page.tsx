@@ -79,23 +79,25 @@ export default function About() {
       </header>
       
       <div className="space-y-8">
-        <section className="card">
+        <section className="card transition-slow">
           <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
-            <p className="indent-8 text-lg leading-relaxed">
-              Hello! My name is Preston Horne and I&apos;m a graduate student pursuing a Master of Science in Computer Science at Vanderbilt University. 
-              I&apos;m passionate about systems programming, cybersecurity, and innovative technologies.
-            </p>
+          <p className="indent-8 text-lg leading-relaxed">
+            Hello! My name is Preston Horne and I&apos;m a graduate student pursuing a Master of Science in Computer Science at Vanderbilt University. 
+            I&apos;m passionate about systems programming, cybersecurity, and innovative technologies.
+          </p>
         </section>
-        <section className="card">
-          <h2 className="text-2xl font-semibold mb-6">Interests</h2>
+
+        <section className="card transition-slow">
+          <h2 className="text-2xl font-semibold mb-6">Technical Skills</h2>
           <div className="space-y-6">
+            <div>
               <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-3">
                 {programmingLanguages.map((lang) => (
-                  <a 
+                  <a
                     key={lang.name}
                     href={lang.url} 
-                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(20%-0.6rem)]"
+                    className="tech-link hover-accent hover-border hover-lift transition-standard icon-filter-hover flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(25%-0.5625rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={lang.name}
@@ -105,18 +107,21 @@ export default function About() {
                       alt={lang.name}
                       width={20}
                       height={20}
+                      className={`icon-filter ${lang.className || ''}`}
                     />
                     <span>{lang.name}</span>
                   </a>
                 ))}
+              </div>
             </div>
+            <div>
               <h3 className="text-lg font-medium mb-4">Development Tools</h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-3">
                 {developmentTools.map((tool) => (
-                  <a 
+                  <a
                     key={tool.name}
                     href={tool.url} 
-                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
+                    className="tech-link hover-accent hover-border hover-lift transition-standard icon-filter-hover flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={tool.name}
@@ -126,19 +131,21 @@ export default function About() {
                       alt={tool.name}
                       width={20}
                       height={20}
+                      className="icon-filter"
                     />
                     <span>{tool.name}</span>
                   </a>
                 ))}
               </div>
+            </div>
             <div>
               <h3 className="text-lg font-medium mb-4">Operating Systems</h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-3">
                 {operatingSystems.map((os) => (
-                  <a 
+                  <a
                     key={os.name}
                     href={os.url} 
-                    className="tech-link flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
+                    className="tech-link hover-accent hover-border hover-lift transition-standard icon-filter-hover flex-none w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] lg:w-[calc(33.333%-0.5rem)]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={os.name}
@@ -148,6 +155,7 @@ export default function About() {
                       alt={os.name}
                       width={20}
                       height={20}
+                      className="icon-filter"
                     />
                     <span>{os.name}</span>
                   </a>

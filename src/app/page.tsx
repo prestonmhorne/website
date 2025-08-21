@@ -5,7 +5,7 @@ export default function Home() {
   const [displayText, setDisplayText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const fullText = 'Preston Horne';
-  const typingDuration = 3250;
+  const typingDuration = 2500;
   const pauseDuration = 10000;
 
   useEffect(() => {

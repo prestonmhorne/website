@@ -22,13 +22,13 @@ export default function Footer() {
             <a
               key={link.name}
               href={link.url}
-              className="footer-social-link"
+              className="footer-social-link hover-lift transition-standard icon-filter-hover"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${link.name} Profile`}
             >
               <Image
-                className="footer-image"
+                className="footer-image icon-filter"
                 src={link.icon}
                 alt={link.name}
                 width={20}
