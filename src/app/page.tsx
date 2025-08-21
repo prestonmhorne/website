@@ -25,16 +25,13 @@ export default function Home() {
         } else {
           clearInterval(typingInterval);
           setAnimationComplete(true);
-          
-          // Stop cursor blinking after animation completes
           cursorTimeout = setTimeout(() => {
             setShowCursor(false);
-          }, 2000); // Keep cursor for 2 seconds after typing completes
+          }, 2000); 
         }
       }, charDelay);
     };
 
-    // Only run animation once when component mounts
     if (!animationComplete) {
       startTyping();
     }
@@ -43,12 +40,10 @@ export default function Home() {
       clearInterval(typingInterval);
       clearTimeout(cursorTimeout);
     };
-  }, []); // Empty dependency array ensures this only runs once
+  }, []);
 
   useEffect(() => {
-    // Only blink cursor while animation is running
     let cursorInterval: NodeJS.Timeout;
-    
     if (!animationComplete) {
       cursorInterval = setInterval(() => {
         setShowCursor(prev => !prev);
@@ -62,8 +57,12 @@ export default function Home() {
     <div className="h-96 flex items-center justify-center">
       <div className="text-3xl sm:text-4xl md:text-5xl font-mono bg-black text-green-300 p-6 sm:p-8 md:p-12 lg:p-16 rounded-xl inline-flex items-center justify-center">
         <span className="flex items-center justify-center relative">
-          {displayText}
-          <span className={`absolute h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-2 sm:w-3 md:w-4 ml-2 transition-opacity duration-100 ${showCursor ? 'bg-green-400 opacity-100' : 'opacity-0'}`} style={{left: '100%'}} />
+          <span className="invisible">{fullText}</span>
+          <span className="absolute inset-0 flex items-center justify-start">{displayText}</span>
+          <span 
+            className={`absolute h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-2 sm:w-3 md:w-4 ml-2 transition-opacity duration-100 ${showCursor ? 'bg-green-400 opacity-100' : 'opacity-0'}`} 
+            style={{left: `${displayText.length}ch`}} 
+          />
         </span>
       </div>
     </div>

@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
+        <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
       </header>
       
       <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
