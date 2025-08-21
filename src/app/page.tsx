@@ -4,16 +4,17 @@ import React, { useState, useEffect } from 'react';
 export default function Home() {
   const [displayText, setDisplayText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
+  const [animationComplete, setAnimationComplete] = useState(false);
   const fullText = 'Preston Horne';
   const typingDuration = 2500;
-  const pauseDuration = 10000;
 
   useEffect(() => {
     let typingInterval: NodeJS.Timeout;
-    let resetTimeout: NodeJS.Timeout;
+    let cursorTimeout: NodeJS.Timeout;
 
     const startTyping = () => {
       setDisplayText('');
+      setAnimationComplete(false);
       const charDelay = typingDuration / fullText.length;
       let charIndex = 0;
 
@@ -23,28 +24,39 @@ export default function Home() {
           charIndex++;
         } else {
           clearInterval(typingInterval);
-          resetTimeout = setTimeout(() => {
-            startTyping();
-          }, pauseDuration);
+          setAnimationComplete(true);
+          
+          // Stop cursor blinking after animation completes
+          cursorTimeout = setTimeout(() => {
+            setShowCursor(false);
+          }, 2000); // Keep cursor for 2 seconds after typing completes
         }
       }, charDelay);
     };
 
-    startTyping();
+    // Only run animation once when component mounts
+    if (!animationComplete) {
+      startTyping();
+    }
 
     return () => {
       clearInterval(typingInterval);
-      clearTimeout(resetTimeout);
+      clearTimeout(cursorTimeout);
     };
-  }, []);
+  }, []); // Empty dependency array ensures this only runs once
 
   useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
+    // Only blink cursor while animation is running
+    let cursorInterval: NodeJS.Timeout;
+    
+    if (!animationComplete) {
+      cursorInterval = setInterval(() => {
+        setShowCursor(prev => !prev);
+      }, 500);
+    }
 
     return () => clearInterval(cursorInterval);
-  }, []);
+  }, [animationComplete]);
 
   return (
     <div className="h-96 flex items-center justify-center">
