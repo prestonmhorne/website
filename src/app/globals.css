@@ -61,7 +61,6 @@ body {
 .transition-slow { transition: all 0.3s ease; }
 .transition-transform { transition: transform 0.2s ease; }
 
-/* Icon filter system for black/white icons */
 .icon-filter {
   filter: brightness(0) saturate(100%);
   transition: none;
@@ -82,9 +81,7 @@ body {
   filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
 }
 
-/* Colored icons - preserve original colors in all modes */
-img[src="/icons/cplusplus.svg"],
-img[alt="C++"],
+.icon-signal,
 .icon-cpp,
 .icon-archlinux,
 .icon-debian,
@@ -101,55 +98,6 @@ img[alt="C++"],
   color: initial !important;
 }
 
-/* Dark mode overrides for colored icons */
-[data-theme="dark"] img[src="/icons/cplusplus.svg"],
-[data-theme="dark"] img[alt="C++"],
-[data-theme="dark"] .icon-cpp,
-[data-theme="dark"] .icon-archlinux,
-[data-theme="dark"] .icon-debian,
-[data-theme="dark"] .icon-docker,
-[data-theme="dark"] .icon-neovim,
-[data-theme="dark"] .icon-python,
-[data-theme="dark"] .icon-c,
-[data-theme="dark"] .icon-go,
-[data-theme="dark"] .icon-raspberrypi {
-  filter: none !important;
-  -webkit-filter: none !important;
-  color: initial !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) img[src="/icons/cplusplus.svg"],
-  :root:not([data-theme]) img[alt="C++"],
-  :root:not([data-theme]) .icon-cpp,
-  :root:not([data-theme]) .icon-archlinux,
-  :root:not([data-theme]) .icon-debian,
-  :root:not([data-theme]) .icon-docker,
-  :root:not([data-theme]) .icon-neovim,
-  :root:not([data-theme]) .icon-python,
-  :root:not([data-theme]) .icon-c,
-  :root:not([data-theme]) .icon-go,
-  :root:not([data-theme]) .icon-raspberrypi {
-    filter: none !important;
-    -webkit-filter: none !important;
-    color: initial !important;
-  }
-}
-
-/* Hover effects for colored icons - turn blue on hover */
-.icon-filter-hover:hover .icon-cpp,
-.icon-filter-hover:hover .icon-archlinux,
-.icon-filter-hover:hover .icon-debian,
-.icon-filter-hover:hover .icon-docker,
-.icon-filter-hover:hover .icon-neovim,
-.icon-filter-hover:hover .icon-python,
-.icon-filter-hover:hover .icon-go,
-.icon-filter-hover:hover .icon-raspberrypi,
-.icon-filter-hover:hover .icon-c {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
-}
-
-/* Rust icon - special case (needs inversion in dark mode) */
 [data-theme="dark"] .rust-icon {
   filter: invert(1);
 }
@@ -160,7 +108,6 @@ img[alt="C++"],
   }
 }
 
-/* Hover and interaction effects */
 .hover-accent:hover {
   background: var(--hover-bg);
   color: var(--accent);
@@ -176,7 +123,6 @@ img[alt="C++"],
   border-color: var(--accent);
 }
 
-/* Layout */
 .layout-grid {
   min-height: 100vh;
   display: grid;
@@ -184,7 +130,6 @@ img[alt="C++"],
   gap: 0;
 }
 
-/* Navigation */
 .nav-container {
   border-bottom: 1px solid var(--border);
   background: var(--background);
@@ -254,7 +199,6 @@ img[alt="C++"],
   transform: rotate(15deg) scale(1.1);
 }
 
-/* Main content */
 .main-content {
   flex: 1;
   display: flex;
@@ -270,7 +214,6 @@ img[alt="C++"],
   margin: 0 auto;
 }
 
-/* Footer */
 .footer-container {
   border-top: 1px solid var(--border);
   background: var(--background);
@@ -312,7 +255,6 @@ img[alt="C++"],
   height: 20px;
 }
 
-/* Tech links */
 .tech-link img {
   width: 20px;
   height: 20px;
@@ -338,7 +280,6 @@ img[alt="C++"],
   box-shadow: var(--shadow-medium);
 }
 
-/* Components */
 .interest-tag {
   display: inline-block;
   padding: 0.75rem 1rem;
@@ -389,13 +330,11 @@ img[alt="C++"],
   box-shadow: var(--shadow-medium);
 }
 
-/* Animations */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .nav-content { padding: 1rem; gap: 1rem; }
   .nav-links { gap: 1rem; }
