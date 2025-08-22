@@ -31,7 +31,7 @@ export default function Contact() {
             alt="Signal"
             width={24}
             height={24}
-            className="icon-signal"
+            className="icon-filter"
           />
           <div className="flex-1">
             <p className="font-semibold text-lg mb-1">Signal</p>
