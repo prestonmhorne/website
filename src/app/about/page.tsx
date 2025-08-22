@@ -5,28 +5,32 @@ export default function About() {
     {
       name: "C",
       url: "https://www.c-language.org",
-      icon: "/icons/c.svg"
+      icon: "/icons/c.svg",
+      iconClass: "icon-c"
     },
     {
       name: "C++",
       url: "https://isocpp.org",
-      icon: "/icons/cplusplus.svg"
+      icon: "/icons/cplusplus.svg",
+      iconClass: "icon-cpp"
     },
     {
       name: "Rust",
       url: "https://www.rust-lang.org",
       icon: "/icons/rust.svg",
-      className: "rust-icon"
+      iconClass: "rust-icon"
     },
     {
       name: "Go",
       url: "https://go.dev",
-      icon: "/icons/go.svg"
+      icon: "/icons/go.svg",
+      iconClass: "icon-go"
     },
     {
       name: "Python",
       url: "https://www.python.org",
-      icon: "/icons/python.svg"
+      icon: "/icons/python.svg",
+      iconClass: "icon-python"
     },
   ];
 
@@ -34,17 +38,20 @@ export default function About() {
     {
       name: "Docker",
       url: "https://www.docker.com",
-      icon: "/icons/docker.svg"
+      icon: "/icons/docker.svg",
+      iconClass: "icon-docker"
     },
     {
       name: "Raspberry Pi",
       url: "https://www.raspberrypi.com",
-      icon: "/icons/raspberrypi.svg"
+      icon: "/icons/raspberrypi.svg",
+      iconClass: "icon-raspberrypi"
     },
     {
       name: "Neovim",
       url: "https://neovim.io",
-      icon: "/icons/neovim.svg"
+      icon: "/icons/neovim.svg",
+      iconClass: "icon-neovim"
     }
   ];
 
@@ -52,17 +59,20 @@ export default function About() {
     {
       name: "Arch Linux",
       url: "https://archlinux.org",
-      icon: "/icons/archlinux.svg"
+      icon: "/icons/archlinux.svg",
+      iconClass: "icon-archlinux"
     },
     {
       name: "Debian",
       url: "https://www.debian.org",
-      icon: "/icons/debian.svg"
+      icon: "/icons/debian.svg",
+      iconClass: "icon-debian"
     },
     {
       name: "GrapheneOS",
       url: "https://grapheneos.org",
-      icon: "/icons/grapheneos.svg"
+      icon: "/icons/grapheneos.svg",
+      iconClass: "icon-filter"
     }
   ];
 
@@ -107,7 +117,7 @@ export default function About() {
                       alt={lang.name}
                       width={20}
                       height={20}
-                      className={`icon-filter ${lang.className || ''}`}
+                      className={lang.iconClass}
                     />
                     <span>{lang.name}</span>
                   </a>
@@ -131,7 +141,7 @@ export default function About() {
                       alt={tool.name}
                       width={20}
                       height={20}
-                      className="icon-filter"
+                      className={tool.iconClass}
                     />
                     <span>{tool.name}</span>
                   </a>
@@ -155,7 +165,7 @@ export default function About() {
                       alt={os.name}
                       width={20}
                       height={20}
-                      className="icon-filter"
+                      className={os.iconClass}
                     />
                     <span>{os.name}</span>
                   </a>

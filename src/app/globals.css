@@ -81,6 +81,34 @@ body {
   filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
 }
 
+/* Colored icons - keep original colors in BOTH light and dark modes */
+.icon-cpp,
+.icon-archlinux,
+.icon-debian,
+.icon-docker,
+.icon-neovim,
+.icon-python,
+.icon-c,
+.icon-go,
+.icon-raspberrypi {
+  filter: none; /* Show original colors in both modes */
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Hover effects for colored icons - turn blue on hover */
+.icon-filter-hover:hover .icon-cpp,
+.icon-filter-hover:hover .icon-archlinux,
+.icon-filter-hover:hover .icon-debian,
+.icon-filter-hover:hover .icon-docker,
+.icon-filter-hover:hover .icon-neovim,
+.icon-filter-hover:hover .icon-python,
+.icon-filter-hover:hover .icon-go,
+.icon-filter-hover:hover .icon-raspberrypi,
+.icon-filter-hover:hover .icon-c {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(209deg) brightness(97%) contrast(90%) !important;
+}
+
 .hover-accent:hover {
   background: var(--hover-bg);
   color: var(--accent);
