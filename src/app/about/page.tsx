@@ -3,6 +3,12 @@ import Image from 'next/image';
 export default function About() {
   const programmingLanguages = [
     {
+      name: "Python",
+      url: "https://www.python.org",
+      icon: "/icons/python.svg",
+      iconClass: "icon-python"
+    },
+    {
       name: "C",
       url: "https://www.c-language.org",
       icon: "/icons/c.svg",
@@ -15,10 +21,10 @@ export default function About() {
       iconClass: "icon-cpp"
     },
     {
-      name: "Rust",
-      url: "https://www.rust-lang.org",
-      icon: "/icons/rust.svg",
-      iconClass: "rust-icon"
+      name: "JavaScript",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      icon: "/icons/javascript.svg",
+      iconClass: "icon-js"
     },
     {
       name: "Go",
@@ -27,11 +33,11 @@ export default function About() {
       iconClass: "icon-go"
     },
     {
-      name: "Python",
-      url: "https://www.python.org",
-      icon: "/icons/python.svg",
-      iconClass: "icon-python"
-    },
+      name: "Rust",
+      url: "https://www.rust-lang.org",
+      icon: "/icons/rust.svg",
+      iconClass: "rust-icon"
+    }
   ];
 
   const developmentTools = [
@@ -67,12 +73,6 @@ export default function About() {
       url: "https://www.debian.org",
       icon: "/icons/debian.svg",
       iconClass: "icon-debian"
-    },
-    {
-      name: "GrapheneOS",
-      url: "https://grapheneos.org",
-      icon: "/icons/grapheneos.svg",
-      iconClass: "icon-filter"
     }
   ];
 
@@ -93,7 +93,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
           <p className="indent-8 text-lg leading-relaxed">
             Hello! My name is Preston Horne and I&apos;m a graduate student pursuing a Master of Science in Computer Science at Vanderbilt University. 
-            I&apos;m passionate about systems programming, cybersecurity, and innovative technologies.
+            I&apos;m passionate about artificial intelligence, cybersecurity, and innovative technologies.
           </p>
         </section>
 
