@@ -98,7 +98,7 @@ export default function About() {
         </section>
 
         <section className="card transition-slow">
-          <h2 className="text-2xl font-semibold mb-6">Technical Skills</h2>
+          <h2 className="text-2xl font-semibold mb-6">Skills</h2>
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium mb-4">Programming Languages</h3>
