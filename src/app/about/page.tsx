@@ -3,6 +3,12 @@ import Image from 'next/image';
 export default function About() {
   const programmingLanguages = [
     {
+      name: "Python",
+      url: "https://www.python.org",
+      icon: "/icons/python.svg",
+      iconClass: "icon-python"
+    },
+    {
       name: "C",
       url: "https://www.c-language.org",
       icon: "/icons/c.svg",
@@ -15,12 +21,6 @@ export default function About() {
       iconClass: "icon-cpp"
     },
     {
-      name: "Python",
-      url: "https://www.python.org",
-      icon: "/icons/python.svg",
-      iconClass: "icon-python"
-    },
-    {
       name: "Go",
       url: "https://go.dev",
       icon: "/icons/go.svg",
@@ -30,6 +30,12 @@ export default function About() {
       name: "JavaScript",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       icon: "/icons/javascript.svg",
+      iconClass: "icon-js"
+    },
+    {
+      name: "TypeScript",
+      url: "https://www.typescriptlang.org",
+      icon: "/icons/typescript.svg",
       iconClass: "icon-js"
     }
   ];
