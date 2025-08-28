@@ -46,12 +46,6 @@ export default function About() {
       url: "https://www.raspberrypi.com",
       icon: "/icons/raspberrypi.svg",
       iconClass: "icon-raspberrypi"
-    },
-    {
-      name: "Neovim",
-      url: "https://neovim.io",
-      icon: "/icons/neovim.svg",
-      iconClass: "icon-neovim"
     }
   ];
 
