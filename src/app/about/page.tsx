@@ -3,12 +3,6 @@ import Image from 'next/image';
 export default function About() {
   const programmingLanguages = [
     {
-      name: "Python",
-      url: "https://www.python.org",
-      icon: "/icons/python.svg",
-      iconClass: "icon-python"
-    },
-    {
       name: "C",
       url: "https://www.c-language.org",
       icon: "/icons/c.svg",
@@ -19,6 +13,12 @@ export default function About() {
       url: "https://isocpp.org",
       icon: "/icons/cplusplus.svg",
       iconClass: "icon-cpp"
+    },
+    {
+      name: "Python",
+      url: "https://www.python.org",
+      icon: "/icons/python.svg",
+      iconClass: "icon-python"
     },
     {
       name: "Go",
