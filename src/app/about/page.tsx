@@ -25,18 +25,6 @@ export default function About() {
       url: "https://go.dev",
       icon: "/icons/go.svg",
       iconClass: "icon-go"
-    },
-    {
-      name: "JavaScript",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      icon: "/icons/javascript.svg",
-      iconClass: "icon-js"
-    },
-    {
-      name: "TypeScript",
-      url: "https://www.typescriptlang.org",
-      icon: "/icons/typescript.svg",
-      iconClass: "icon-js"
     }
   ];
 
