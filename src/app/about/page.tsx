@@ -25,6 +25,18 @@ export default function About() {
       url: "https://go.dev",
       icon: "/icons/go.svg",
       iconClass: "icon-go"
+    },
+    {
+      name: "Rust",
+      url: "https://www.rust-lang.org",
+      icon: "/icons/rust.svg",
+      iconClass: "rust-icon"
+    },
+    {
+      name: "JavaScript",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      icon: "/icons/javascript.svg",
+      iconClass: "icon-js"
     }
   ];
 
