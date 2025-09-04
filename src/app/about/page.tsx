@@ -33,18 +33,6 @@ export default function About() {
       iconClass: "rust-icon"
     },
     {
-      name: "Swift",
-      url: "https://www.swift.org",
-      icon: "/icons/swift.svg",
-      iconClass: "icon-js"
-    },
-    {
-      name: "Kotlin",
-      url: "https://kotlinlang.org",
-      icon: "/icons/kotlin.svg",
-      iconClass: "icon-js"
-    },
-    {
       name: "JavaScript",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       icon: "/icons/javascript.svg",
